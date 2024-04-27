@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'mini_factory',
     'schneider_plc',
     'stepper_motor',
+    'splinter',
 ]
 
 MIDDLEWARE = [
