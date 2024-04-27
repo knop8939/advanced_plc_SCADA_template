@@ -26,4 +26,5 @@ urlpatterns = [
     path("", include("mini_factory.urls")),
     path("", include("stepper_motor.urls")),
     path("", include("schneider_plc.urls")),
+    path("", include("splinter.urls")),
 ]
