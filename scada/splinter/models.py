@@ -1,3 +1,9 @@
 from django.db import models
 
-# Create your models here.
+class SplinterDataPoint(models.Model):
+	# Tag Name
+	tag_name = models.CharField(max_length=256)
+	# Tag Value/ Status
+	tag_value = models.IntegerField()
+	# Timestamp
+	timestamp = models.DateTimeField()

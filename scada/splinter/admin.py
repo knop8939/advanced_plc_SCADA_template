@@ -1,3 +1,4 @@
 from django.contrib import admin
+from splinter.models import SplinterDataPoint
 
-# Register your models here.
+admin.site.register(SplinterDataPoint)

@@ -80,15 +80,20 @@ def send_data_to_webserver(data_dict, session):
 
     # This is the site you are trying to send to
     site_url = 'http://localhost:8000/receive-stepper-data/'
+    site_url2 = 'http://localhost:8000/receive-splinter-data/'
+
     # These are some headers for your browser, I wouldn't worry about these
     headers = {'User-Agent': 'Mozilla/5.0'}
 
     # This is sending the data to the webserver
     r = session.post(site_url, data=json_string, headers=headers)
+    r2 = session.post(site_url2, data=json_string, headers=headers)
 
     # This is the webservers response, which if it is working
     # should be a response code of 200
     print(r.status_code)
+    print(r2.status_code)
+
 
 
 def main():
